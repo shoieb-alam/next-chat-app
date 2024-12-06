@@ -15,7 +15,7 @@ export default function MessageList({ messages }: MessageListProps) {
         <div key={index} className="message-item mb-3 p-3 bg-blue-100 rounded-lg">
           <strong className="block text-blue-600 mb-1">{message.sender}</strong>
           <p className="text-gray-800"> {message.text} </p>
-          <span className="message-timestamp text-xs text-gray-500 ml-2">12:34 PM</span>
+          <span className="message-timestamp text-xs text-gray-500 ml-2">{message.timestamp}</span>
         </div>
       ))}
     </div>
